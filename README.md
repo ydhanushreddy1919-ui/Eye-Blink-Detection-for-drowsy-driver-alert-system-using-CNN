@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# 👁️ Eye Blink Detection for Drowsy Driver Alert System using CNN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚗 Real-Time Drowsy Driver Alert System
 
-Currently, two official plugins are available:
+**Developed by: Dhanush Reddy**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Live Demo] https://qlp74k-3zkvrfn1r-arcadawebapps4.vercel.app
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The **Eye Blink Detection for Drowsy Driver Alert System using CNN** is a deep learning project that detects driver drowsiness by analyzing eye blinking and eye-closure patterns in real time.
 
-## Expanding the ESLint configuration
+A CNN model is used to classify the driver's eyes as **Open** or **Closed**. If the eyes remain closed for a specific duration, the system detects possible drowsiness and generates an alert.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 👨‍💻 Developer
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+**Dhanush Reddy**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Live Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🔗 [Click Here to Open Live Server](YOUR_LIVE_SERVER_URL)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The live server provides access to the drowsiness detection system through a web browser.
+
+---
+
+## 🧠 Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- CNN
+- OpenCV
+- Flask
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## ⚙️ How It Works
+
+```text
+Camera
+   ↓
+Capture Face
+   ↓
+Detect Eyes
+   ↓
+CNN Model
+   ↓
+Open / Closed Classification
+   ↓
+Analyze Eye Closure
+   ↓
+Drowsiness Detected
+   ↓
+🚨 Driver Alert
