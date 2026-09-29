@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://psgbxegriixilhwhyxre.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_VOSAnscnSbV08QbsZ4gKmg_p9oAParW",
+    "SUPABASE_SERVICE_ROLE_KEY": "sb_secret_AE2d8PkWg90FMNFkAwdAKg_36O8gBH6",
+    "VITE_SUPABASE_URL": "https://psgbxegriixilhwhyxre.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "sb_publishable_VOSAnscnSbV08QbsZ4gKmg_p9oAParW",
+    "VITE_GOOGLE_CLIENT_ID": "1065078894672-rmp5kp8vfjns5rn9kp5psfp16g691043.apps.googleusercontent.com",
+    "VITE_GOOGLE_AUTH_PROXY": "https://designarena.ai/auth/google/callback",
+    "FULLSTACK_PROJECT_REF": "psgbxegriixilhwhyxre",
+    "FULLSTACK_RESTORE_API_URL": "https://designarena.ai/api/fullstack-restore"
+  }
+}
